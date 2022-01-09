@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Zone;
 use Illuminate\Database\Seeder;
 
 class ZoneSeeder extends Seeder
@@ -13,6 +14,6 @@ class ZoneSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Zone::factory(5)->create();
     }
 }

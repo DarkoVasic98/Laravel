@@ -14,7 +14,8 @@ class ZoneFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->unique()->safeColorName . ' zone',
+            'hour_price' => $this->faker->randomFloat(2, 50, 150)
         ];
     }
 }

@@ -14,7 +14,10 @@ class ParkingFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'vehicle_id' => $this->faker->numberBetween(1, 30),
+            'zone_id' => $this->faker->numberBetween(1, 5),
+            'start' => $this->faker->dateTime,
+            'end' => $this->faker->dateTime
         ];
     }
 }
